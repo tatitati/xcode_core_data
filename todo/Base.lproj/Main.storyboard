@@ -6,10 +6,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Todo list-->
+        <!--Main - Todo-->
         <scene sceneID="0iW-3M-igg">
             <objects>
                 <tableViewController id="RSu-FW-34M" customClass="TodoTableViewController" customModule="todo" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,11 +33,58 @@
                             <outlet property="delegate" destination="RSu-FW-34M" id="6zd-fS-Cc5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todo list" id="k0E-PS-nEf"/>
+                    <navigationItem key="navigationItem" title="Main - Todo" id="k0E-PS-nEf">
+                        <barButtonItem key="backBarButtonItem" title="Back to main" id="tPL-hw-2MW"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yHf-db-v0J">
+                            <connections>
+                                <segue destination="i2s-YD-7iB" kind="show" id="6LM-pj-1qi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLV-r6-YMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="423" y="5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pqH-bv-h5y">
+            <objects>
+                <viewController id="i2s-YD-7iB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vBs-Mc-brE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSk-OH-rdJ">
+                                <rect key="frame" x="154" y="343" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N0i-F4-zQZ">
+                                <rect key="frame" x="50" y="223" width="274" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TuT-Jc-bWO">
+                                <rect key="frame" x="149" y="287" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New task:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2L0-Nb-z8G">
+                                <rect key="frame" x="50" y="194" width="114" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="i0j-hS-cC8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZR2-sq-3g0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504.8" y="20.239880059970016"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SLB-JE-JD6">
