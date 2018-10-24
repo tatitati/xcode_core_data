@@ -15,11 +15,11 @@ class TodoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var todo1 = ToDo()
+        let todo1 = ToDo()
         todo1.name = "my first task"
         todo1.important = true
         
-        var todo2 = ToDo()
+        let todo2 = ToDo()
         todo2.name = "my second task"
         todo2.important = false
         
@@ -31,11 +31,13 @@ class TodoTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // How many rows?
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return todos.count
     }
     
+    // What goes in each row?
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         cell.textLabel?.text = todos[indexPath.row].name
