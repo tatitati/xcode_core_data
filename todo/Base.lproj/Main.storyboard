@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="423" y="5"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Todo View Controller-->
         <scene sceneID="pqH-bv-h5y">
             <objects>
-                <viewController id="i2s-YD-7iB" sceneMemberID="viewController">
+                <viewController id="i2s-YD-7iB" customClass="CreateTodoViewController" customModule="todo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vBs-Mc-brE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,6 +58,9 @@
                                 <rect key="frame" x="154" y="343" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="i2s-YD-7iB" eventType="touchUpInside" id="mbY-rU-sfU"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N0i-F4-zQZ">
                                 <rect key="frame" x="50" y="223" width="274" height="30"/>
@@ -81,6 +84,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="i0j-hS-cC8"/>
                     </view>
+                    <connections>
+                        <outlet property="importantSwtich" destination="TuT-Jc-bWO" id="2sK-WX-6ak"/>
+                        <outlet property="nameTextField" destination="N0i-F4-zQZ" id="FKN-gs-Ovg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZR2-sq-3g0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
