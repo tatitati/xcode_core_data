@@ -12,6 +12,7 @@ class CreateTodoViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var importantSwtich: UISwitch!
+    var todoTableVC : TodoTableViewController? = nil
     
     
     override func viewDidLoad() {
@@ -26,10 +27,9 @@ class CreateTodoViewController: UIViewController {
         if let name = nameTextField.text {
             newTodo.name = name
         }
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        todoTableVC?.todos.append(newTodo)
+        todoTableVC?.tableView.reloadData()
+        navigationController?.popViewController(animated: true)
     }
 }
