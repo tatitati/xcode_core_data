@@ -60,17 +60,33 @@
 		5B49A54A2180C03B00997B89 /* todo */ = {
 			isa = PBXGroup;
 			children = (
+				5B5AF9F621836313003C91B2 /* Model */,
+				5B5AF9F5218362F4003C91B2 /* Controllers */,
 				5B49A54B2180C03B00997B89 /* AppDelegate.swift */,
 				5B49A54F2180C03B00997B89 /* Main.storyboard */,
 				5B49A5552180C03B00997B89 /* Assets.xcassets */,
 				5B49A5572180C03B00997B89 /* LaunchScreen.storyboard */,
 				5B49A55A2180C03B00997B89 /* Info.plist */,
 				5B49A5522180C03B00997B89 /* todo.xcdatamodeld */,
-				5B49A5622180C2F800997B89 /* TodoTableViewController.swift */,
-				5B49A5642180C3BE00997B89 /* ToDo.swift */,
-				5B5AF9F321833929003C91B2 /* CreateTodoViewController.swift */,
 			);
 			path = todo;
+			sourceTree = "<group>";
+		};
+		5B5AF9F5218362F4003C91B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B49A5622180C2F800997B89 /* TodoTableViewController.swift */,
+				5B5AF9F321833929003C91B2 /* CreateTodoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B5AF9F621836313003C91B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B49A5642180C3BE00997B89 /* ToDo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
