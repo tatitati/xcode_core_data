@@ -15,6 +15,7 @@
 		5B49A5632180C2F800997B89 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49A5622180C2F800997B89 /* TodoTableViewController.swift */; };
 		5B49A5652180C3BE00997B89 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49A5642180C3BE00997B89 /* ToDo.swift */; };
 		5B5AF9F421833929003C91B2 /* CreateTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5AF9F321833929003C91B2 /* CreateTodoViewController.swift */; };
+		5BF7F37F218376D80047A0FD /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7F37E218376D80047A0FD /* CompleteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5B49A5622180C2F800997B89 /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 		5B49A5642180C3BE00997B89 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		5B5AF9F321833929003C91B2 /* CreateTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTodoViewController.swift; sourceTree = "<group>"; };
+		5BF7F37E218376D80047A0FD /* CompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		5B5AF9F5218362F4003C91B2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5BF7F37E218376D80047A0FD /* CompleteViewController.swift */,
 				5B49A5622180C2F800997B89 /* TodoTableViewController.swift */,
 				5B5AF9F321833929003C91B2 /* CreateTodoViewController.swift */,
 			);
@@ -166,6 +169,7 @@
 				5B49A5542180C03B00997B89 /* todo.xcdatamodeld in Sources */,
 				5B5AF9F421833929003C91B2 /* CreateTodoViewController.swift in Sources */,
 				5B49A5652180C3BE00997B89 /* ToDo.swift in Sources */,
+				5BF7F37F218376D80047A0FD /* CompleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
